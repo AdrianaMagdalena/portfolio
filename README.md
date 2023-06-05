@@ -1,15 +1,18 @@
 Personal portfolio website
 
+Live: https://adrianamagdalena.github.io/portfolio/
+
 Done:
 Main nav pane
 Hero section
 About me section
+Responsive mode
+List of technologies I know
 
 Will have:
-Responsive mode
 CV download
 Contact me page
-Projects list
+Projects page
 tbc
 
 Used illustrations:
