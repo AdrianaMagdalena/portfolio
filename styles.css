@@ -1,0 +1,174 @@
+/*color palette: 
+1. #fff5e9 - beige
+2. #e75450 - red
+2. #ffb833 - yellow
+3. #ff832f - orange
+4. #d17352 - brown
+5. #ffb08d - salmon
+6. #383333 - grey/black
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #383333;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #fff5e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.logo-dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.logo-dot.one {
+  background-color: #ffb833;
+}
+.logo-dot.two {
+  background-color: #ff832f;
+}
+.logo-dot.three {
+  background-color: #e75450;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-right: 50px;
+  list-style-type: none;
+}
+
+.hero {
+  background-color: #fff5e9;
+}
+
+.hero-content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.hero-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.hero-image {
+  flex: 1;
+  height: 300px;
+  width: 300px;
+}
+
+.styled-break {
+  width: 80px;
+  height: 5px;
+  background-color: #e75450;
+  border-radius: 2.5px;
+  margin: 25px 0;
+}
+
+#name {
+  margin-bottom: 8px;
+}
+
+.button {
+  box-sizing: content-box;
+  width: 100px;
+  padding: 10px 20px;
+  background-color: #faaa4d;
+  border-radius: 20px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  box-shadow: 0 0 3px 3px #faa94da8;
+  cursor: pointer;
+}
+
+section {
+  width: 50%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.about-my-photo {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.info {
+  flex: 2;
+  min-width: 300px;
+}
+
+.info h2 {
+  margin-bottom: 8px;
+}
+
+footer {
+  height: 60px;
+  background-color: #ffb08d;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
