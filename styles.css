@@ -115,13 +115,17 @@ a {
   margin-bottom: 8px;
 }
 
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+}
+
 .button {
-  max-width: 150px;
-  padding: 0.5em 0;
+  font-size: 1rem;
+  padding: 0.8em 1.5em;
   background-color: #faaa4d;
-  border-radius: 1em;
+  border-radius: 2em;
   color: white;
-  font-size: 1.1rem;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
@@ -131,6 +135,24 @@ a {
 .button:focus {
   box-shadow: 0 0 3px 3px #faa94da8;
   cursor: pointer;
+}
+#technologies {
+  padding: 2rem;
+}
+#technologies ul {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+#technologies li img {
+  height: 100px;
+  width: auto;
+  margin-bottom: 1rem;
+  display: block;
 }
 
 section {
@@ -204,13 +226,18 @@ footer {
     align-items: center;
     gap: 1rem;
   }
+  .hero-info {
+    max-width: 700px;
+  }
   .interests ul {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     margin: 0 auto;
-    max-width: 80vw;
+    width: 80vw;
+    max-width: 1000px;
   }
+
   .interests ul li {
     flex: 1;
   }
