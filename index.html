@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <nav>
       <div class="nav-content">
@@ -29,6 +30,7 @@
         </ul>
       </div>
     </nav>
+
     <div class="hero">
       <div class="hero-content">
         <div class="hero-image">
@@ -65,27 +67,39 @@
         </div>
       </div>
     </div>
-    <section id="technologies">
-      <h2>Technologies I know:</h2>
-      <ul>
-        <li><img alt="HTML logo" src="./img/HTML5_Badge.svg" />HTML</li>
-        <li><img alt="CSS logo" src="./img/CSS3.png" />CSS</li>
-        <li>
-          <img
-            alt="JavaScript logo"
-            src="./img/JavaScript-logo.png"
-          />JavaScript
-        </li>
-        <li><img alt="React logo" src="./img/React-icon.svg" />React</li>
-        <li><img alt="Git logo" src="./img/Git-Icon-1788C.png" />Git</li>
-      </ul>
+
+    <section class="technologies-container">
+      <div class="technologies">
+        <h2>Technologies I know:</h2>
+        <ul class="technologies-list">
+          <li><img alt="HTML logo" src="./img/HTML5_Badge.svg" />HTML</li>
+          <li><img alt="CSS logo" src="./img/CSS3.png" />CSS</li>
+          <li>
+            <img
+              alt="JavaScript logo"
+              src="./img/JavaScript-logo.png"
+            />JavaScript
+          </li>
+          <li><img alt="React logo" src="./img/React-icon.svg" />React</li>
+          <li><img alt="Git logo" src="./img/Git-Icon-1788C.png" />Git</li>
+        </ul>
+      </div>
+      <div class="technologies">
+        <h2>Technologies I'm currently learning:</h2>
+        <ul class="technologies-list">
+          <li><img alt="Angular logo" src="./img/angular.png" />Angular</li>
+          <li><img alt="Node.js logo" src="./img/nodejs.png" />Node.js</li>
+          <li><img alt="Vue.js logo" src="./img/Vue.js_Logo_2.svg" />Vue.js</li>
+        </ul>
+      </div>
     </section>
-    <section id="interests">
+
+    <section id="interests" class="interests-container">
       <div class="interests">
         <h2>Get to know me!</h2>
         <ul>
           <li>
-            <div>
+            <div class="interests-card">
               <h3>Pixel art</h3>
               <p>
                 I'm a big fan of simple, eye-catching designs, so naturally I
@@ -95,7 +109,7 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="interests-card">
               <h3>Embroidery, crocheting, knitting</h3>
               <p>
                 My go-to way of relaxing is crocheting, knitting and embroidery.
@@ -106,7 +120,7 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="interests-card">
               <h3>Modern hungarian literature and translation</h3>
               <p>
                 As a graduate of Hungarian Studies, I'm also interested in
@@ -118,6 +132,7 @@
         </ul>
       </div>
     </section>
+
     <footer>
       <p>Copyright © Adriana Szetlak 2023</p>
     </footer>
