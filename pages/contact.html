@@ -2,26 +2,89 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adriana Szetlak - Contact</title>
-    <link rel="stylesheet" href="styles-pages.css" />
+    <link rel="stylesheet" href="contact-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/841b8a192e.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
-    <h1>Page under construction</h1>
-    <div class="border">
-      <i alt="construction" class="fa-solid fa-screwdriver-wrench"></i>
-    </div>
-    <a href="../index.html">
-      <button>Go back to main page</button>
-    </a>
+    <nav>
+      <div class="nav-content">
+        <a href="../index.html"
+          ><div class="logo">
+            <div class="logo-dot one"></div>
+            <div class="logo-dot two"></div>
+            <div class="logo-dot three"></div></div
+        ></a>
+        <ul class="nav-options">
+          <li><a href="#interests">About me</a></li>
+          <li>
+            <a href="https://github.com/AdrianaMagdalena" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="pages/contact.html">Contact me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <form>
+      <h1>Contact Me</h1>
+      <p>
+        If you wish to hire me or ask me a question, please use the below
+        contact form to send me a message! I'll respond to your email as soon as
+        possible!
+      </p>
+      <div class="input-section">
+        <div class="input-group">
+          <label for="first-name">First name:</label>
+          <input
+            type="placeholder"
+            id="first-name"
+            name="first-name"
+            placeholder="John"
+          />
+        </div>
+        <div class="input-group">
+          <label for="last-name">Surname:</label>
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Doe"
+          />
+        </div>
+        <div class="input-group">
+          <label for="email">Email address:</label>
+          <input
+            type="email"
+            id="email"
+            name="enamesurname@ddomain.com"
+            placeholder="namesurname@domain.com"
+          />
+        </div>
+        <div class="input-group">
+          <label for="message">Your message:</label>
+          <textarea
+            type="text"
+            id="message"
+            name="Write your message here...age"
+            placeholder="Write your message here..."
+            cols="35"
+            rows="7"
+          ></textarea>
+        </div>
+      </div>
+
+      <input class="button" type="submit" value="submit" />
+    </form>
+    <footer>
+      <p>Copyright © Adriana Szetlak 2023</p>
+    </footer>
   </body>
 </html>
