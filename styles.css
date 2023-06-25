@@ -267,6 +267,13 @@ footer {
     max-width: 70ch;
   }
 
+  .technologies-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+
   .interests ul {
     display: flex;
     flex-direction: row;
