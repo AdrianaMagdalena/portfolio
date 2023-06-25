@@ -8,6 +8,7 @@ Hero section
 About me section
 Responsive mode
 List of technologies I know
+Banner with links to github and Frontend mentor -temporary-
 
 Will have:
 CV download
