@@ -233,9 +233,6 @@ footer {
   body {
     gap: 4rem;
   }
-  .hero {
-    margin-top: -4rem;
-  }
 
   .logo {
     flex-direction: row;
@@ -243,6 +240,10 @@ footer {
 
   .nav-options {
     flex-direction: row;
+  }
+
+  .hero {
+    margin-top: -4rem;
   }
 
   .technologies-container {
