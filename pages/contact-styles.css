@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #383333;
+}
+
+nav {
+  width: 100%;
+  background-color: #fff5e9;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.logo-dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.logo-dot.one {
+  background-color: #ffb833;
+}
+.logo-dot.two {
+  background-color: #ff832f;
+}
+.logo-dot.three {
+  background-color: #e75450;
+}
+
+.nav-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  list-style-type: none;
+}
+
+form {
+  width: 90vw;
+  margin: 1rem auto;
+  border: 2px solid #ffaf8d62;
+  border-radius: 0.375rem;
+  padding: 2rem;
+  background-color: #fff5e91c;
+}
+
+form h1,
+form p {
+  margin-bottom: 1rem;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.input-group input,
+.input-group textarea {
+  font-family: inherit;
+  font-size: 0.75rem;
+  color: inherit;
+  padding: 0.375rem;
+  border: 1px solid #ffaf8d7f;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.button {
+  font-size: 1rem;
+  padding: 0.75em 2em;
+  background-color: #faaa4d;
+  border-radius: 2em;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: 0 0 3px 3px #faa94da8;
+  cursor: pointer;
+}
+
+footer {
+  height: 60px;
+  background-color: #ffb08d;
+  color: #fff;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    gap: 3rem;
+  }
+
+  .logo {
+    flex-direction: row;
+  }
+
+  .nav-options {
+    flex-direction: row;
+  }
+
+  form {
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    gap: 5rem;
+  }
+
+  .nav-content {
+    max-width: 1000px;
+  }
+
+  .nav-options {
+    gap: 1rem;
+  }
+}
