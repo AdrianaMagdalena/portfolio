@@ -8,7 +8,7 @@
 body {
   height: 100vh;
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   flex-direction: column;
   background-color: #fff;
   font-family: "Roboto", sans-serif;
@@ -65,59 +65,57 @@ a {
   list-style-type: none;
 }
 
-form {
-  width: 90vw;
-  margin: 1rem auto;
-  border: 2px solid #ffaf8d62;
-  border-radius: 0.375rem;
-  padding: 2rem;
-  background-color: #fff5e91c;
+.contact {
+  width: 85%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-form h1,
-form p {
-  margin-bottom: 1rem;
+.contact h2 {
+  margin-bottom: 3rem;
+  font-weight: 400;
+  font-size: 1.75rem;
 }
 
-.input-section {
+.contact h1 {
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.contact-options {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  gap: 2rem;
+  color: #383333;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.contact-option-card {
+  border: 2px solid #ffb08d;
+  border-radius: 4rem;
+  padding: 1em 2em;
+  background-color: #fff5e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
-.input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.125rem;
-}
-
-.input-group input,
-.input-group textarea {
+.contact a {
   font-family: inherit;
-  font-size: 0.75rem;
+  font-size: inherit;
   color: inherit;
-  padding: 0.375rem;
-  border: 1px solid #ffaf8d7f;
-  border-radius: 0.5rem;
-  width: 100%;
 }
 
-.button {
-  font-size: 1rem;
-  padding: 0.75em 2em;
-  background-color: #faaa4d;
-  border-radius: 2em;
-  color: white;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 1rem;
+.contact i {
+  font-size: 1.5rem;
 }
 
-.button:hover,
-.button:focus {
-  box-shadow: 0 0 3px 3px #faa94da8;
+.contact-option-card:hover {
+  color: #fff;
+  background-color: #ffb08d;
   cursor: pointer;
 }
 
@@ -135,7 +133,7 @@ footer {
 
 @media screen and (min-width: 600px) {
   body {
-    gap: 4rem;
+    gap: 10rem;
   }
 
   .logo {
@@ -147,17 +145,31 @@ footer {
     gap: 0.5rem;
   }
 
-  form {
-    max-width: 500px;
+  .contact {
+    max-width: none;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+  .contact h1 {
+    font-size: 1.75rem;
+    margin-bottom: 4rem;
+  }
+
+  .contact-options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   footer {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 850px) {
   body {
-    gap: 5rem;
+    gap: 13rem;
   }
 
   .nav-content {
