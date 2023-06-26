@@ -167,6 +167,7 @@ footer {
     font-size: 1rem;
   }
 }
+
 @media screen and (min-width: 850px) {
   body {
     gap: 13rem;
