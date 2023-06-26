@@ -18,7 +18,7 @@
 body {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
   background-color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -70,13 +70,14 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 8px;
+  gap: 4px;
   list-style-type: none;
 }
 
 .hero {
   background-color: #fff5e9;
-  margin-top: -2rem;
+  margin-top: -4rem;
+  padding-top: 2rem;
 }
 
 .hero-content {
@@ -229,7 +230,7 @@ footer {
   align-items: center;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   body {
     gap: 4rem;
   }
@@ -240,6 +241,7 @@ footer {
 
   .nav-options {
     flex-direction: row;
+    gap: 0.5rem;
   }
 
   .hero {
@@ -266,12 +268,21 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
+  body {
+    gap: 6rem;
+  }
+
   .nav-content {
     max-width: 1000px;
   }
 
   .nav-options {
     gap: 1rem;
+  }
+
+  .hero {
+    margin-top: -6rem;
+    padding-top: 3rem;
   }
 
   .hero-content {
