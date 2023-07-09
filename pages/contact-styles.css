@@ -203,8 +203,19 @@ footer {
     justify-content: center;
   }
 
-  .modal-clipboard {
-    top: 100px;
+  @keyframes slideIn {
+    0% {
+      top: -70px;
+    }
+    20% {
+      top: 100px;
+    }
+    80% {
+      top: 100px;
+    }
+    100% {
+      top: -70px;
+    }
   }
 
   footer {
