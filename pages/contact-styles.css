@@ -6,7 +6,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   gap: 3rem;
   flex-direction: column;
@@ -178,7 +178,7 @@ footer {
 
 @media screen and (min-width: 600px) {
   body {
-    gap: 10rem;
+    gap: 8rem;
   }
 
   .logo {
@@ -240,7 +240,7 @@ footer {
 
 @media screen and (min-width: 850px) {
   body {
-    gap: 13rem;
+    gap: 15rem;
   }
 
   .nav-content {
