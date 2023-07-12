@@ -69,13 +69,12 @@ a {
   width: 85%;
   margin: 0 auto;
   display: grid;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .page-title {
   text-align: center;
   font-size: 1.375rem;
-  margin-bottom: 2.5rem;
   text-transform: uppercase;
 }
 
@@ -121,7 +120,7 @@ a {
   position: relative;
 }
 
-.left-column img {
+.double-picture {
   min-width: 200px;
   width: 70%;
   max-width: 250px;
@@ -135,6 +134,20 @@ a {
   z-index: 1;
   bottom: 0;
   right: 0;
+}
+
+.single-picture-container {
+  max-width: 400px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.single-picture {
+  height: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px #1d201e80;
 }
 
 .buttons {
@@ -165,6 +178,17 @@ a {
   cursor: pointer;
 }
 
+.frontentmentor-link {
+  color: #ffb08d;
+  font-weight: bold;
+}
+
+.frontentmentor-link:hover {
+  color: #ffb08d;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 footer {
   height: 60px;
   background-color: #ffb08d;
@@ -188,18 +212,18 @@ footer {
   }
 
   .projects-container {
-    width: 70%;
+    gap: 5rem;
   }
 
-  .buttons {
-    align-items: center;
-    justify-content: flex-start;
+  .projects-container {
+    width: 70%;
   }
 
   footer {
     font-size: 1rem;
   }
 }
+
 @media screen and (min-width: 850px) {
   .nav-content {
     max-width: 1000px;
@@ -207,6 +231,11 @@ footer {
 
   .nav-options {
     gap: 1rem;
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 1.75rem;
   }
 
   .projects-container {
@@ -224,14 +253,33 @@ footer {
     grid-row-start: 1;
     grid-row-end: 3;
   }
+
+  .project-card:nth-child(odd) .left-column {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .buttons {
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
 
 @media screen and (min-width: 1000px) {
+  .project-card {
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .project-card:nth-child(odd) {
+    grid-template-columns: 1fr 1.5fr;
+  }
+
   .picture-container {
     max-width: 750px;
   }
 
-  .left-column img {
+  .double-picture {
     min-width: 300px;
     width: 75%;
     max-width: 600px;
@@ -241,8 +289,16 @@ footer {
     box-shadow: 0 2px 5px #1d201e80;
   }
 
-  .project-card {
-    grid-template-columns: 1.5fr 1fr;
+  .single-picture-container {
+    min-width: 475px;
+    max-width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .single-picture {
+    width: 100%;
+    height: auto;
   }
 
   .front-picture {
