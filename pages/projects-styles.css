@@ -268,11 +268,36 @@ footer {
 
 @media screen and (min-width: 1000px) {
   .project-card {
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.25fr 1fr;
   }
 
   .project-card:nth-child(odd) {
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1.25fr;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .card-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .category {
+    margin: 0.75rem 0 0.25rem;
+    font-size: 1.125rem;
+  }
+
+  .right-column p {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .right-column li {
+    font-size: 1rem;
+    margin-left: 1.25rem;
+    margin-bottom: 0.25rem;
   }
 
   .picture-container {
