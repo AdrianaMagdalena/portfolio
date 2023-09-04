@@ -331,12 +331,9 @@ footer {
     gap: 6rem;
   }
 
-  nav {
-    font-size: 1.125rem;
-  }
-
   .nav-content {
     max-width: 1000px;
+    font-size: 1.125rem;
   }
 
   .nav-options {
@@ -388,6 +385,7 @@ footer {
 
   .button {
     font-size: 1.125rem;
+    white-space: nowrap;
   }
 
   .technologies-container {
