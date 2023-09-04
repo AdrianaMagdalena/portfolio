@@ -1,12 +1,15 @@
-/*color palette: 
-1. #fff5e9 - beige
-2. #e75450 - red
-2. #ffb833 - yellow
-3. #ff832f - orange
-4. #d17352 - brown
-5. #ffb08d - salmon
-6. #383333 - grey/black
-*/
+:root {
+  --clr-bg: #fff;
+  --clr-bg-shade: hsl(0, 27%, 97%);
+  --clr-primary: #0d4033;
+  --clr-secondary: #dddeeb;
+  --clr-accent: #965a7e;
+
+  --clr-font-light: #fff;
+  --clr-font-dark: #1e1110;
+
+  --shadow: #1e111053;
+}
 
 * {
   margin: 0;
@@ -19,15 +22,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  background-color: #fff;
+  background-color: var(--clr-bg);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  color: #383333;
+  color: var(--clr-font-dark);
 }
 
 nav {
   width: 100%;
-  background-color: #fff5e9;
+  background-color: var(--clr-bg-shade);
 }
 
 .nav-content {
@@ -40,7 +43,11 @@ nav {
 
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
+}
+
+.nav-options-container a:hover {
+  color: var(--clr-accent);
 }
 
 .logo {
@@ -57,13 +64,14 @@ a {
 }
 
 .logo-dot.one {
-  background-color: #ffb833;
+  background-color: var(--clr-primary);
 }
 .logo-dot.two {
-  background-color: #ff832f;
+  background-color: var(--clr-primary);
+  opacity: 0.5;
 }
 .logo-dot.three {
-  background-color: #e75450;
+  background-color: var(--clr-accent);
 }
 
 .nav-options-container {
@@ -72,7 +80,7 @@ a {
   align-items: flex-end;
   gap: 0.5rem;
   position: absolute;
-  right: 1rem;
+  right: 0;
   top: 1rem;
 }
 
@@ -87,80 +95,92 @@ a {
   gap: 1rem;
   list-style-type: none;
   position: relative;
+  background-color: var(--clr-bg-shade);
+  padding: 1rem 1.5rem;
+  border-radius: 0 0 0 30px;
 }
 
 .hamburger {
   font-size: 1.5rem;
   background-color: transparent;
   margin-top: 4px;
-  margin-right: 4px;
+  margin-right: calc(1rem + 4px);
 }
 
 .hero {
-  background-color: #fff5e9;
+  background-color: var(--clr-bg-shade);
   margin-top: -4rem;
   padding-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-content {
   width: 90vw;
-  margin: 1rem auto;
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
+  max-width: 70ch;
 }
 
-.hero-image {
+/* .hero-image {
   max-width: 300px;
 }
 
 .hero-image img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 .hero-info {
   display: flex;
+  margin: 1rem auto;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
-  max-width: 50ch;
+}
+
+.hero-info p {
+  margin-bottom: 1rem;
 }
 
 .styled-break {
   width: 150px;
-  height: 6px;
-  background-color: #e75450;
+  height: 4px;
+  background-color: var(--clr-primary);
   border-radius: 3px;
-  margin: 25px 0;
-}
-
-#name {
-  margin-bottom: 8px;
+  margin: 1rem 0 2rem 0;
 }
 
 .buttons-container {
+  margin-bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .button {
   font-size: 1rem;
   padding: 0.8em 2em;
-  background-color: #faaa4d;
-  border-radius: 2em;
-  color: white;
-  font-weight: 600;
+  background-color: var(--clr-primary);
+  opacity: 0.9;
+  border-radius: 0.5em;
+  color: var(--clr-font-light);
   text-align: center;
-  text-transform: uppercase;
+  transition-duration: 0.2s;
+}
+
+.button.primary {
+  background-color: var(--clr-accent);
 }
 
 .button:hover,
 .button:focus {
-  box-shadow: 0 0 3px 3px #faa94da8;
+  opacity: 1;
   cursor: pointer;
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
+  box-shadow: 0 0.25rem 3px 1px var(--shadow);
 }
 
 .technologies-container,
@@ -170,7 +190,7 @@ a {
   margin: 0 auto;
 }
 
-.technologies-container {
+.technologies {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -199,19 +219,25 @@ a {
 
 .projects-banner {
   width: 90%;
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
-  background-color: #fff5e9;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 2px solid #fff0df;
+  background-color: var(--clr-secondary);
+  padding: 1.25em;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 .projects-banner h2 {
+  margin-bottom: 1rem;
+}
+
+.projects-banner p {
   margin-bottom: 0.5rem;
+}
+
+.projects-banner .buttons-container {
+  margin: 0;
 }
 
 .interests ul {
@@ -223,7 +249,7 @@ a {
 }
 
 .interests li {
-  border: solid 2px #ffb833;
+  border: solid 2px var(--clr-secondary);
   border-radius: 4px;
   margin-top: 1rem;
   list-style-type: none;
@@ -233,7 +259,7 @@ a {
 .interests-card {
   padding: 1rem;
   border-radius: 4px;
-  border: solid 2px #e75450;
+  border: solid 2px var(--clr-accent);
   transform: rotate(-3deg);
   height: 100%;
 }
@@ -244,8 +270,8 @@ a {
 
 footer {
   height: 60px;
-  background-color: #ffb08d;
-  color: #fff;
+  background-color: var(--clr-accent);
+  color: var(--clr-font-light);
   font-size: 0.8rem;
   display: flex;
   justify-content: center;
@@ -277,10 +303,6 @@ footer {
     margin-top: -4rem;
   }
 
-  .technologies-container {
-    gap: 3rem;
-  }
-
   .technologies-list {
     gap: 2rem;
     padding-top: 2rem;
@@ -291,6 +313,14 @@ footer {
     width: auto;
   }
 
+  .projects-banner {
+    padding: 1.5em;
+  }
+
+  .interests-card {
+    padding: 1.5rem;
+  }
+
   footer {
     font-size: 1rem;
   }
@@ -299,6 +329,10 @@ footer {
 @media screen and (min-width: 1000px) {
   body {
     gap: 6rem;
+  }
+
+  nav {
+    font-size: 1.125rem;
   }
 
   .nav-content {
@@ -316,13 +350,44 @@ footer {
 
   .hero-content {
     width: 80vw;
+    max-width: fit-content;
+    gap: 3rem;
     padding: 2rem 0;
     flex-direction: row;
     justify-content: center;
   }
 
   .hero-info {
-    max-width: 70ch;
+    max-width: 80ch;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  h3 {
+    font-size: 1.625rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  .hero-content .buttons-container {
+    display: flex;
+    flex-direction: column;
+    order: -1;
+    align-self: flex-end;
+    align-items: flex-end;
+    gap: 2rem;
+  }
+
+  .button {
+    font-size: 1.125rem;
   }
 
   .technologies-container {
@@ -333,8 +398,8 @@ footer {
   }
 
   .projects-banner {
-    max-width: 800px;
-    padding: 1.5rem;
+    max-width: 1000px;
+    padding: 2rem 2.5rem;
     flex-direction: row;
     gap: 1rem;
   }
@@ -346,12 +411,16 @@ footer {
     flex-shrink: 0;
   }
 
+  .interests h2 {
+    margin-bottom: 2rem;
+  }
+
   .interests ul {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     margin: 0 auto;
-    width: 80vw;
+    width: 90vw;
     max-width: 1000px;
   }
 
