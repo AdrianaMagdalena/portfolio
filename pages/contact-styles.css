@@ -1,3 +1,16 @@
+:root {
+  --clr-bg: #fff;
+  --clr-bg-shade: hsl(0, 27%, 97%);
+  --clr-primary: #0d4033;
+  --clr-secondary: #dddeeb;
+  --clr-accent: #965a7e;
+
+  --clr-font-light: #fff;
+  --clr-font-dark: #1e1110;
+
+  --shadow: #1e111053;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,13 +26,13 @@ body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  color: #383333;
+  color: var(--clr-font-dark);
   position: relative;
 }
 
 nav {
   width: 100%;
-  background-color: #fff5e9;
+  background-color: var(--clr-bg-shade);
 }
 
 .nav-content {
@@ -32,7 +45,11 @@ nav {
 
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
+}
+
+.nav-options-container a:hover {
+  color: var(--clr-accent);
 }
 
 .logo {
@@ -49,13 +66,14 @@ a {
 }
 
 .logo-dot.one {
-  background-color: #ffb833;
+  background-color: var(--clr-primary);
 }
 .logo-dot.two {
-  background-color: #ff832f;
+  background-color: var(--clr-primary);
+  opacity: 0.5;
 }
 .logo-dot.three {
-  background-color: #e75450;
+  background-color: var(--clr-accent);
 }
 
 .nav-options-container {
@@ -79,7 +97,7 @@ a {
   gap: 1rem;
   list-style-type: none;
   position: relative;
-  background-color: #fff5e9;
+  background-color: var(--clr-bg-shade);
   padding: 1rem 1.5rem;
   border-radius: 0 0 0 30px;
 }
@@ -113,22 +131,22 @@ a {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  color: #383333;
+  color: var(--clr-font-light);
   font-size: 1rem;
-  font-weight: bold;
 }
 
 .contact-option-card {
-  border: 2px solid #ffb08d;
-  border-radius: 4rem;
-  height: 4rem;
-  padding: 0 3em;
-  background-color: #fff5e9;
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 0.5rem;
   word-break: break-all;
+  padding: 1em 3em;
+  background-color: var(--clr-primary);
+  opacity: 0.9;
+  border-radius: 0.5em;
+  color: var(--clr-font-light);
+  text-align: center;
+  transition-duration: 0.2s;
 }
 
 .contact a {
@@ -141,15 +159,18 @@ a {
   font-size: 1.5rem;
 }
 
-.contact-option-card:hover {
-  color: #fff;
-  background-color: #ffb08d;
+.contact-option-card:hover,
+.contact-option-card:focus {
+  opacity: 1;
   cursor: pointer;
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
+  box-shadow: 0 0.25rem 3px 1px var(--shadow);
 }
 
 .modal-clipboard {
   z-index: 1;
-  background-color: #ffb08d;
+  background-color: var(--clr-secondary);
   display: flex;
   gap: 0.5rem;
   align-items: center;
@@ -157,8 +178,7 @@ a {
   width: 15rem;
   height: 4rem;
   border-radius: 3em;
-  color: white;
-  font-weight: bold;
+  color: var(--clr-font-dark);
   position: absolute;
   top: -70px;
   left: 0;
@@ -191,8 +211,8 @@ a {
 
 footer {
   height: 60px;
-  background-color: #ffb08d;
-  color: #fff;
+  background-color: var(--clr-accent);
+  color: var(--clr-font-light);
   font-size: 0.8rem;
   display: flex;
   justify-content: center;
@@ -277,6 +297,7 @@ footer {
 
   .nav-content {
     max-width: 1000px;
+    font-size: 1.125rem;
   }
 
   .nav-options {
