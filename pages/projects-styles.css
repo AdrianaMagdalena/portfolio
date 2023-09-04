@@ -349,7 +349,7 @@ footer {
     grid-template-columns: 1.25fr 1fr;
   }
 
-  .project-card:nth-child(odd) {
+  .project-card:nth-child(even) {
     grid-template-columns: 1fr 1.25fr;
   }
 
@@ -365,6 +365,10 @@ footer {
   .category {
     margin: 0.75rem 0 0.25rem;
     font-size: 1.125rem;
+  }
+
+  .right-column {
+    max-width: 60ch;
   }
 
   .right-column p {
