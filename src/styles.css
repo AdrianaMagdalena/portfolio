@@ -124,15 +124,6 @@ a {
   max-width: 70ch;
 }
 
-/* .hero-image {
-  max-width: 300px;
-}
-
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-} */
-
 .hero-info {
   display: flex;
   margin: 1rem auto;
