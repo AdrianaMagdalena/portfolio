@@ -6,10 +6,9 @@
 }
 
 body {
-  height: 100dvh;
   display: flex;
-  gap: 3rem;
   flex-direction: column;
+  gap: 3rem;
   background-color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -36,7 +35,7 @@ a {
 
 .logo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   gap: 4px;
 }
@@ -57,12 +56,37 @@ a {
   background-color: #e75450;
 }
 
-.nav-options {
+.nav-options-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 4px;
+  gap: 0.5rem;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+}
+
+.nav-options {
+  display: none;
+}
+
+.nav-options.show {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
   list-style-type: none;
+  position: relative;
+  background-color: #fff5e9;
+  padding: 1rem 1.5rem;
+  border-radius: 0 0 0 30px;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  background-color: transparent;
+  margin-top: 4px;
+  margin-right: calc(1rem + 4px);
 }
 
 .projects-container {
@@ -202,13 +226,20 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
-  .logo {
+  .nav-options {
+    display: flex;
     flex-direction: row;
+    align-items: flex-end;
+    gap: 1rem;
+    list-style-type: none;
   }
 
-  .nav-options {
-    flex-direction: row;
-    gap: 0.5rem;
+  .nav-options-container {
+    position: static;
+  }
+
+  .hamburger {
+    display: none;
   }
 
   .projects-container {
