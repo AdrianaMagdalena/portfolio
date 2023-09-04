@@ -297,10 +297,15 @@ footer {
 
   .nav-content {
     max-width: 1000px;
-    font-size: 1.125rem;
   }
 
   .nav-options {
     gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 100px) {
+  .nav-content {
+    font-size: 1.125rem;
   }
 }
