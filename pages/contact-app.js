@@ -12,3 +12,12 @@ clickToCopy.addEventListener("click", () => {
   modal.classList.add("slide-in");
   setTimeout(removeClass, 2000);
 });
+
+const hamburgerBtn = document.getElementById("hamburger");
+const navList = document.getElementById("navList");
+
+function toggleButton() {
+  navList.classList.toggle("show");
+}
+
+hamburgerBtn.addEventListener("click", toggleButton);
