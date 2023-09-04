@@ -1,4 +1,4 @@
-const hamburgerBtn = document.getElementById("hamburger");
+const hamburgerBtn = document.querySelector(".hamburger");
 const navList = document.getElementById("navList");
 
 function toggleButton() {
