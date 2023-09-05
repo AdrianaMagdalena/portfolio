@@ -1,9 +1,9 @@
 :root {
   --clr-bg: #fff;
-  --clr-bg-shade: hsl(0, 27%, 97%);
-  --clr-primary: #0d4033;
-  --clr-secondary: #dddeeb;
-  --clr-accent: #854269;
+  --clr-bg-shade: hsl(0, 28%, 96%);
+  --clr-primary: #004f3b;
+  --clr-secondary: hsl(233, 35%, 93%);
+  --clr-accent: #7f0e50;
 
   --clr-font-light: #fff;
   --clr-font-dark: #1e1110;
